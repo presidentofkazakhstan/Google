@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="645.275" Width="1190">
+    <Grid>
+        <TabControl SelectionChanged="AddNewItem" Name="TabControl" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="1166" Margin="10,10,0,0">
+            <TabItem Header="Google">
+                <WebBrowser Name="webBrowser" Margin="0,0,-8,-10" HorizontalAlignment="Left" Width="1168" Height="582" VerticalAlignment="Top"/>
+            </TabItem>
+            <TabItem Name="addNewItem" Header="+"/>
+        </TabControl>
+    </Grid>
+</Window>

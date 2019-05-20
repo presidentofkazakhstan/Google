@@ -7,11 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="645.275" Width="1190">
     <Grid>
-        <TabControl SelectionChanged="AddNewItem" Name="TabControl" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="1166" Margin="10,10,0,0">
+        <TabControl SelectionChanged="AddNewItem" Name="TabControl" HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="1166">
+            
             <TabItem Header="Google">
-                <WebBrowser Name="webBrowser" Margin="0,0,-8,-10" HorizontalAlignment="Left" Width="1168" Height="582" VerticalAlignment="Top"/>
+                <WebBrowser Name="webBrowser" HorizontalAlignment="Left" Width="1168" Height="582" VerticalAlignment="Top"/>
             </TabItem>
-            <TabItem Name="addNewItem" Header="+"/>
+
+            <TabItem Name="addNewItem" Header="+">
+                
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

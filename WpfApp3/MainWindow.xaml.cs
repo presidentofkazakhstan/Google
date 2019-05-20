@@ -33,6 +33,8 @@ namespace WpfApp3
         {
             if (TabControl.SelectedIndex == TabControl.Items.Count - 1)
             {
+                TabItem addNewItem = new TabItem() { Header = "+" };
+
                 (TabControl.Items[TabControl.Items.Count - 1] as TabItem).Header = "Google";
 
                 (TabControl.Items[TabControl.Items.Count - 1] as TabItem).Content = new WebBrowser()
@@ -40,10 +42,7 @@ namespace WpfApp3
                     Source = new Uri("https://google.com")
                 };
 
-                TabItem addNewItem = new TabItem()
-                {
-                    Header = "+"
-                };
+                
                 TabControl.Items.Add(addNewItem);
             }
         }
